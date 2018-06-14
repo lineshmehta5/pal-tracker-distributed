@@ -20,6 +20,7 @@ resources:
   type: s3
   source:
     bucket: {{aws-bucket}}
+    region_name: {{aws-region-name}}
     regexp: pal-tracker-distributed/allocations-server-(.*).jar
     access_key_id: {{aws-access-key-id}}
     secret_access_key: {{aws-secret-access-key}}
@@ -28,6 +29,7 @@ resources:
   type: s3
   source:
     bucket: {{aws-bucket}}
+    region_name: {{aws-region-name}}
     regexp: pal-tracker-distributed/backlog-server-(.*).jar
     access_key_id: {{aws-access-key-id}}
     secret_access_key: {{aws-secret-access-key}}
@@ -36,6 +38,7 @@ resources:
   type: s3
   source:
     bucket: {{aws-bucket}}
+    region_name: {{aws-region-name}}
     regexp: pal-tracker-distributed/registration-server-(.*).jar
     access_key_id: {{aws-access-key-id}}
     secret_access_key: {{aws-secret-access-key}}
@@ -44,6 +47,7 @@ resources:
   type: s3
   source:
     bucket: {{aws-bucket}}
+    region_name: {{aws-region-name}}
     regexp: pal-tracker-distributed/timesheets-server-(.*).jar
     access_key_id: {{aws-access-key-id}}
     secret_access_key: {{aws-secret-access-key}}
