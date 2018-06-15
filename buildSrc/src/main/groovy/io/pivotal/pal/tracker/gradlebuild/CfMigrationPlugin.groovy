@@ -57,7 +57,7 @@ class CfMigrationPlugin implements Plugin<Project> {
 
     private static def buildFlywayExtension(Project project, String cfAppName) {
         def extension = new FlywayExtension()
-
+        extension.baselineOnMigrate = true
         getMysqlCredentials(cfAppName)?.with { credentials ->
 
             extension.user = credentials["username"]
