@@ -22,8 +22,6 @@ public class OauthResourceServerConfig extends ResourceServerConfigurerAdapter {
         return new OAuth2RestTemplate(resource, oauth2ClientContext);
     }
 
-
-
     @Override
     public void configure(HttpSecurity http) throws Exception {
         // enforce authentication on our API endpoints.
