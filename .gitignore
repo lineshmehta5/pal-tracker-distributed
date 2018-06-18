@@ -7,3 +7,6 @@ build
 .DS_Store
 .env
 ci/variables.yml
+ci/dump.tmp
+urls.txt
+**/out
