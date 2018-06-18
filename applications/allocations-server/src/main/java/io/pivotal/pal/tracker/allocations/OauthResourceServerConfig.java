@@ -23,7 +23,7 @@ public class OauthResourceServerConfig extends ResourceServerConfigurerAdapter {
     }
 
 
-    
+
     @Override
     public void configure(HttpSecurity http) throws Exception {
         // enforce authentication on our API endpoints.
