@@ -10,6 +10,8 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Res
 @ConditionalOnProperty(value = "application.oauth-enabled", matchIfMissing = true)
 public class OauthResourceServerConfig extends ResourceServerConfigurerAdapter {
 
+
+
     @Override
     public void configure(HttpSecurity http) throws Exception {
         // enforce authentication on our API endpoints.

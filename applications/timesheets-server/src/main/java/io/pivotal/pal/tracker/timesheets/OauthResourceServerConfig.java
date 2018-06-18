@@ -28,6 +28,8 @@ public class OauthResourceServerConfig extends ResourceServerConfigurerAdapter {
         http.authorizeRequests().anyRequest().authenticated();
     }
 
+
+
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
         // do not require a resource id in AccessToken.

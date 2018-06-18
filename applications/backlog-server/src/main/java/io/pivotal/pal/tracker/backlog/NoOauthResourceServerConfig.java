@@ -18,6 +18,8 @@ public class NoOauthResourceServerConfig extends ResourceServerConfigurerAdapter
         http.authorizeRequests().anyRequest().permitAll();
     }
 
+
+
     @Bean
     @LoadBalanced
     public RestOperations restOperations() {
